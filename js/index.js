@@ -62,14 +62,14 @@ $(document).ready(function () {
         console.log(increasing_val);
         if ((increasing_val >= percent) && (increasing_val != percent)){
             increasing_val = percent;
-            $('.increasing_val').html(increasing_val);
+            $('.increasing_val').fadeIn().html(increasing_val);
             clearInterval(increasing);
         } else if(increasing_val == percent){
             clearInterval(increasing);
         }else {
-            $('.increasing_val').html(increasing_val);
+            $('.increasing_val').fadeIn().html(increasing_val);
         }
-    }, 300);
+    }, 500);
 
 });
 
