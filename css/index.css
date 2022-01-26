@@ -1,0 +1,82 @@
+.title {
+    display: inline;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.title:after {
+    content: "\a";
+    white-space: pre;
+}
+
+.text {
+    display: inline;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.text:after {
+    content: "\a";
+    white-space: pre;
+}
+
+.white-hr {
+    color: white;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.blue-back {
+    background: #004a7f;
+}
+
+.grey-back {
+    border: 2px solid white;
+    border-radius: 20px;
+    background: #404040;
+}
+
+.ck {
+    cursor: pointer;
+}
+
+.fab {
+    padding: 8px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    /* font-size: 1rem; */
+}
+
+.buy_now {
+    width: 100%;
+    background: white;
+    color: black;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.bb{
+    margin-left: 20%;
+}
+
+@media(max-width: 780px){
+    .row>*{
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto !important;
+    }
+    .bb{
+        margin: 30px;
+        padding: 30px !important;
+    }
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
