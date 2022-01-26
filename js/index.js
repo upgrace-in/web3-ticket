@@ -57,13 +57,16 @@ $(document).ready(function () {
     }, 3000);
 
     var increasing = setInterval(() => {
-        var random = Math.floor(Math.random() * (percent - 5 + 1) + 5)
+        var random = Math.floor(Math.random() * (6 - 5 + 1) + 5)
         increasing_val = increasing_val + random;
-        if (increasing_val >= percent) {
+        console.log(increasing_val);
+        if ((increasing_val >= percent) && (increasing_val != percent)){
+            increasing_val = percent;
+            $('.increasing_val').html(increasing_val);
             clearInterval(increasing);
-        } else {
-            
-            console.log(increasing_val);
+        } else if(increasing_val == percent){
+            clearInterval(increasing);
+        }else {
             $('.increasing_val').html(increasing_val);
         }
     }, 300);
